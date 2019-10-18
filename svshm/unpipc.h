@@ -112,7 +112,7 @@ union semun {				/* define union for semctl() */
 #ifdef _PSX4_NSPACE_H_TS	/* Digital Unix 4.0b hack, hack, hack */
 #undef	SUCCESS
 #endif
-# include	<rpc/rpc.h>		/* Sun RPC */
+//# include	<rpc/rpc.h>		/* Sun RPC */
 #endif
 
 /* Define bzero() as a macro if it's not in standard C library. */
@@ -476,8 +476,8 @@ Door_create_proc	*Door_server_create(Door_create_proc *);
 #endif	/* HAVE_DOOR_H */
 
 #ifdef	HAVE_RPC_RPC_H
-CLIENT	*Clnt_create(const char *, u_long, u_long, const char *);
-void	 Clnt_control(CLIENT *, u_int, char *);
+//CLIENT	*Clnt_create(const char *, u_long, u_long, const char *);
+//void	 Clnt_control(CLIENT *, u_int, char *);
 #endif
 
 #endif	/* __unpipc_h */
